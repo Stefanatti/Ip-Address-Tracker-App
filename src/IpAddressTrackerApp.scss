@@ -1,0 +1,135 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+
+  //background-color: bisque;
+}
+
+.top-div {
+  position: relative;
+  img {
+    width: 100vw;
+    height: 14rem;
+  }
+  .form-div {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  label {
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+  }
+
+  input {
+    border: 0;
+    border-radius: 6px;
+    width: 25rem;
+    height: 30px;
+  }
+  button {
+    width: 40px;
+    height: 34px;
+    background-color: hsl(0, 0%, 17%);
+    color: azure;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+}
+
+.middle-div {
+  position: relative;
+  max-width: 60rem;
+  min-height: 7rem;
+  background-color: aliceblue;
+  bottom: 55px;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+
+  justify-content: space-between;
+
+  .infoDiv {
+    width: 200px;
+    border-right: 1px solid rgb(149, 139, 126);
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      align-self: flex-start;
+      font-size: 10px;
+      font-weight: 500;
+      color: hsl(0, 0%, 59%);
+    }
+    h3 {
+      color: hsl(0, 0%, 17%);
+      font-size: 17px;
+    }
+  }
+}
+
+.bottom-div {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  bottom: 120px;
+  z-index: 1;
+}
+.leaflet-container {
+  width: 100%;
+  height: 100vh;
+}
+#map {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  z-index: -1;
+}
+//////////////////////////
+
+.modalOverlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.modalContainer {
+  background: rgb(59, 59, 122);
+  color: white;
+  text-align: center;
+  width: 250px;
+  height: 150px;
+  position: fixed;
+  border: 1px solid white;
+  top: 250px;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+}
